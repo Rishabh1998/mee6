@@ -13,7 +13,7 @@ class LeaderboardController < ApplicationController
             player["xp"] = format_number(player["xp"])
             player["message_count"] = format_number(player["message_count"])
         end
-        render json: data["players"]
+        render json: data
     end
 
     def format_number(n)
