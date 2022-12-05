@@ -13,3 +13,12 @@ development:
   password: postgres
   host: localhost
   port: 5432
+
+production:
+  <<: *default
+  adapter: postgresql
+  database: prod
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
